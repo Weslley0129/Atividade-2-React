@@ -1,0 +1,57 @@
+.produto-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.produto-card--promocao {
+  border-color: var(--warn-border);
+}
+
+.produto-card__topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.produto-card__nome {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.produto-card__categoria {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.produto-card__preco {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.produto-card__selo {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.produto-card__selo--promocao {
+  background: var(--warn-bg);
+  color: var(--warn);
+  border-color: var(--warn-border);
+}

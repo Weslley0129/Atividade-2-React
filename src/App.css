@@ -1,0 +1,84 @@
+.app {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app__header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+}
+
+.app__badge {
+  align-self: flex-start;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+}
+
+.app__header p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.app__resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.app__resumo > div {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.app__resumo-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.app__resumo strong {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+}
+
+.app__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.app__form h2,
+.app__comparacao h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.app__comparacao p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}

@@ -1,0 +1,51 @@
+.formulario-produto {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+@media (max-width: 640px) {
+  .formulario-produto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formulario-produto__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formulario-produto__campo label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.formulario-produto__campo input,
+.formulario-produto__campo select {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+.formulario-produto button {
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  cursor: pointer;
+}
+
+.formulario-produto button:hover {
+  background: var(--accent-strong);
+}
